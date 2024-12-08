@@ -2,6 +2,7 @@ from .clean_names import clean_names, make_clean_names
 from .complete import complete, expand
 from .dates_to_polars import convert_excel_date, convert_matlab_date
 from .pivot_longer import pivot_longer, pivot_longer_spec
+from .replace_nulls import replace_nulls
 from .row_to_names import row_to_names
 
 __all__ = [
@@ -14,4 +15,5 @@ __all__ = [
     "complete",
     "convert_excel_date",
     "convert_matlab_date",
+    "replace_nulls",
 ]
