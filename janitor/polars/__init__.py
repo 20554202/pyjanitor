@@ -1,3 +1,4 @@
+from .clean_excel_dates import clean_excel_dates
 from .clean_names import clean_names, make_clean_names
 from .complete import complete, expand
 from .dates_to_polars import convert_excel_date, convert_matlab_date
@@ -18,4 +19,5 @@ __all__ = [
     "convert_matlab_date",
     "replace_nulls",
     "drop_nulls",
+    "clean_excel_dates",
 ]
