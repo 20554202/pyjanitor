@@ -1,0 +1,22 @@
+[package]
+name = "janitor"
+version = "0.3.0"
+edition = "2024"
+
+[lib]
+name = "polars"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = {version = "0.21", features = ["abi3-py39", "extension-module"]}
+pyo3-polars = {version = "0.15", features = ["derive"]}
+polars = {version = "0.41.3", features = ["performant", "cse", "lazy",
+"parquet", "dtype-array", "diff", "array_count", "abs", "cross_join", "rank", "ndarray", "log",
+"cum_agg", "round_series", "nightly", "dtype-struct"]}
+rapidfuzz = "0.5.0"
+hashbrown = {version = "0.14.2", features=["nightly"]}
+rayon = "1.10.0"
+cfavml = {version = "0.3.0", features=["nightly"]}
+num = "0.4.1"
+ndarray = {version="0.15.6"}
+serde = {version = "*", features=["derive"]}
