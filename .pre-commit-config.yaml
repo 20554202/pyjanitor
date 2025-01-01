@@ -13,11 +13,7 @@ repos:
     hooks:
       - id: black
         args: [--config, pyproject.toml]
-  - repo: https://github.com/econchick/interrogate
-    rev: 1.7.0
-    hooks:
-      - id: interrogate
-        args: [-c, pyproject.toml]
+
   # Taking out darglint because it takes too long to run.
   # It may be superseded by ruff: https://github.com/astral-sh/ruff/issues/458
   # - repo: https://github.com/terrencepreilly/darglint

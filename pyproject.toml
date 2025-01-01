@@ -39,7 +39,7 @@ line-length = 79
 target-version = ['py36', 'py37', 'py38']
 
 [tool.interrogate]
-exclude = ["setup.py", "docs", "nbconvert_config.py"]
+exclude = ["setup.py", "docs", "nbconvert_config.py", "tests"]
 fail-under = 55
 ignore-init-method = true
 ignore-init-module = true
