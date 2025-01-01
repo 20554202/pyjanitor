@@ -5,7 +5,7 @@ edition = "2024"
 include = ["!*.so"]
 
 [lib]
-name = "polars"
+name = "janitor"
 path = "janitor/src/lib.rs"
 crate-type = ["cdylib"]
 
