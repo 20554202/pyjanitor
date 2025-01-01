@@ -5,7 +5,8 @@ import pandas_flavor as pf  # noqa: F401
 from .accessors import *  # noqa: F403, F401
 from .functions import *  # noqa: F403, F401
 from .io import *  # noqa: F403, F401
-from .math import *  # noqa: F403, F401
+
+# from .math import *  # noqa: F403, F401
 from .ml import get_features_targets as _get_features_targets
 from .utils import refactored_function
 from .xarray import *  # noqa: F403, F401
