@@ -6,6 +6,7 @@ include = ["!*.so"]
 
 [lib]
 name = "polars"
+path = "janitor/src/lib.rs"
 crate-type = ["cdylib"]
 
 [dependencies]

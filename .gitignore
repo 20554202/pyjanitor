@@ -143,3 +143,8 @@ tags
 *.profraw
 /scratch.py
 midpoint.csv
+
+
+# Added by cargo
+
+/target
