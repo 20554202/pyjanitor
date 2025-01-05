@@ -16,7 +16,7 @@ except ImportError:
 
 
 @register_dataframe_method
-def replace_nulls(df: pl.DataFrame, extra_nulls: list = None) -> pl.DataFrame:
+def replace_nulls2(df: pl.DataFrame, extra_nulls: list = None) -> pl.DataFrame:
     """
     Replace specified null-like values with `None` in a Polars DataFrame.
 

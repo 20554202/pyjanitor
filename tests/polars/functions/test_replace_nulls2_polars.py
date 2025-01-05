@@ -24,7 +24,7 @@ def test_replace_nulls_default():
         }
     )
 
-    df = df.replace_nulls()
+    df = df.replace_nulls2()
     assert_frame_equal(df, expected_data)
 
 
@@ -49,5 +49,5 @@ def test_replace_nulls_addnulls():
 
     extra_nulls = ["ExtraNull"]
 
-    df = df.replace_nulls(extra_nulls=extra_nulls)
+    df = df.replace_nulls2(extra_nulls=extra_nulls)
     assert_frame_equal(df, expected_data)
